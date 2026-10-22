@@ -1,5 +1,4 @@
-const KEY = "catdog-votes"
-//purposely removing semicolon here
+const KEY = "catdog-votes";
 
 function load() {
   try {
