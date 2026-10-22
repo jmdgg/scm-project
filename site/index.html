@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cats vs Dogs: The Great Debate</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🐱 Cats vs Dogs 🐶</h1>
+    <p>The oldest argument on the internet. Pick a side.</p>
+  </header>
+
+  <main>
+    <section class="sides">
+      <article class="side cat">
+        <h2>Team Cat</h2>
+        <ul>
+          <li>Low maintenance: they bathe themselves and use a litter box.</li>
+          <li>Happy in a small apartment.</li>
+          <li>Fine on their own while you're at class.</li>
+          <li>Purring is scientifically relaxing.</li>
+        </ul>
+        <button type="button" data-vote="cat">Vote Cat</button>
+      </article>
+
+      <article class="side dog">
+        <h2>Team Dog</h2>
+        <ul>
+          <li>Loyal and always happy to see you.</li>
+          <li>Gets you outside for walks every day.</li>
+          <li>Can learn tricks, jobs, and commands.</li>
+          <li>Great at guarding the house.</li>
+        </ul>
+        <button type="button" data-vote="dog">Vote Dog</button>
+      </article>
+    </section>
+
+    <section class="results" aria-live="polite">
+      <h2>Scoreboard</h2>
+      <div class="bar"><div id="cat-bar" class="fill cat"></div><div id="dog-bar" class="fill dog"></div></div>
+      <p id="tally">No votes yet.</p>
+      <p id="verdict"></p>
+      <button type="button" id="reset">Reset votes</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>Votes are saved in your browser only.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
