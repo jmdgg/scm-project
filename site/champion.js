@@ -1,6 +1,6 @@
 // Picks the "Champion of the Day" from a date. Pure, so Jest can test it without a browser.
 function pickChampion(date) {
-  if (date.getDay() === 6) {
+  if (date.getDay() === 0) {
     return { team: "cat", message: "🐱 It's Caturday! Cats rule today, no debate." };
   }
   // whole days since 1970 in local time, so the champion flips at local midnight
