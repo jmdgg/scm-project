@@ -6,7 +6,7 @@ export default [
       ecmaVersion: "latest",
       sourceType: "script",
       // shortcut: browser globals listed by hand, switch to the `globals` package if the site grows
-      globals: { document: "readonly", localStorage: "readonly", window: "readonly" },
+      globals: { document: "readonly", localStorage: "readonly", window: "readonly", module: "readonly" },
     },
     rules: {
       semi: ["error", "always"],
